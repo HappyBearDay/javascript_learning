@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script>
+            var eleve = { 
+                nom : "jean",
+                present : function (){
+                    console.log(this.nom)
+                },
+                notes : [10,11,15,17],
+                moyenne : function(){
+                    var somme = 0
+                    for ( var i = 0; i < this.notes.length; i++){
+                        somme += this.notes[i]
+                    }
+                    return somme / this.notes.length 
+                }
+            }
+            eleve.present()
+            console.log(eleve.moyenne())
+        </script>
+    </head>
+
+</html>
